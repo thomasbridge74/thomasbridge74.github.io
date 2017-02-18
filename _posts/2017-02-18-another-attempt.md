@@ -17,4 +17,4 @@ git push
 
 And... that's it.
 
-![Holiday Photo from 2003](img/tb-holliers.jpg "Holiday Photo from 2003")
+![Holiday Photo from 2003](/img/tb-holliers.jpg "Holiday Photo from 2003")
