@@ -11,10 +11,10 @@ is as follows:
 
 Create the file in the _posts folder in the main folder of my username.github.ie repository.
 
-git add <filename>
-git commit -m "<Comment>"
-git push
-
+  git add <filename>
+  git commit -m "<Comment>"
+  git push
+  
 And... that's it.
 
-![Holiday Photo from 2003](/img/tb-holliers.jpg "Holiday Photo from 2003")
+![Holiday Photo from 2003](/img/tb-holliers.png "Holiday Photo from 2003")
