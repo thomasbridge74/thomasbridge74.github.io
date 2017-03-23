@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS IAM roles apply to EC2 instance in the console
+title: You can now add IAM profiles to running EC2 instances in the AWS console
 ---
 
 So while going over some prep material today for the AWS Sysops Associate Exam, I noticed that AWS have finally updated the console to allow
