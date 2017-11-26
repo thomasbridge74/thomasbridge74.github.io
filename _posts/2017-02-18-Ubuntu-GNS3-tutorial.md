@@ -34,10 +34,10 @@ clicking on the entry and selecting clone.
 
 On the first page you need to define the name of the VirtualBox server (this is important, so hold onto that information 
 for later):
-![Clone1](/img/quagga-tutorial/clone1.png)
+![Clone1]({{ site.baseurl }}/img/quagga-tutorial/clone1.png)
 
 I typically go for Full Clone, but you can go for Linked Clone if you know what you're doing:
-![Clone2](/img/quagga-tutorial/clone2.png)
+![Clone2]({{ site.baseurl }}/img/quagga-tutorial/clone2.png)
 
 Once that's complete, boot up the VM.   Log into the VM and then run the command
 
@@ -49,8 +49,8 @@ The next step is to halt the quagga server, and then change the network configur
 on the server, select Settings and go to Network you will see that Adapter1 is enabled, and attached to NAT.   If you select
 Adapter2 you will see it's not attached to anything.
 
-![Adapter1 before](/img/quagga-tutorial/quagga-network-before-1.png) 
-![Adapter2 before](/img/quagga-tutorial/quagga-network-before-2.png)
+![Adapter1 before]({{ site.baseurl }}/img/quagga-tutorial/quagga-network-before-1.png) 
+![Adapter2 before]({{ site.baseurl }}/img/quagga-tutorial/quagga-network-before-2.png)
 
 Before we move on, we need to detach the first adapter as by unchecking the Enable Network Adapter box (Alternatively, you can set this to 
 Generic Driver if you want, but GNS3 will do that for you anyway in the next stage).
@@ -58,18 +58,18 @@ Generic Driver if you want, but GNS3 will do that for you anyway in the next sta
 Finally, we need to add the server to GNS3.   In GNS3, go GNS3->Preferences->VirtualBox VMs and select New.   A Dropdown list 
 of all the VMs in Virtualbox will be shown and you can select the instance you've installed Quagga on.
 
-![Add VM to GNS](/img/quagga-tutorial/addtogns1.png)
+![Add VM to GNS]({{ site.baseurl }}/img/quagga-tutorial/addtogns1.png)
 
 However, this typically adds the VM with a single interface - you need multiple interfaces for the lab set so select the VM, 
 then click Edit and on the Network screen, increase the number of Adapters to 4.
  
-![Increase Adapter Counter Screenshot](/img/quagga-tutorial/addtogns2.png)
+![Increase Adapter Counter Screenshot]({{ site.baseurl }}/img/quagga-tutorial/addtogns2.png)
 
 # GNS3 Topology / IP Allocation.
 
 Before we go on, the next step is to layout the topology for this lab.   As we're trying to cover both OSPF and BGP, we will
 set up three Cisco routers as well as the Quagga router:
-![Network Topology](/img/quagga-tutorial/topology.png)
+![Network Topology]({{ site.baseurl }}/img/quagga-tutorial/topology.png)
 
 In the diagram above, the Quagga router is the Grey router.   R1, R2 and R3 are all Cisco routers.    
 IP Allocations are as follows:
@@ -95,8 +95,8 @@ The routes with AS65002 will be advertised to the Quagga router, which will then
 deliver full connectivity.
 
 We won't go into details on how to setup the Ubuntu Hosts and I'm simply supplying the Cisco Router configurations 
-([R1](/files/quagga-tutorial/r1.conf),
-[R2](/files/quagga-tutorial/r2.conf), and [R3](/files/quagga-tutorial/r3.conf))       
+([R1]({{ site.baseurl }}/files/quagga-tutorial/r1.conf),
+[R2]({{ site.baseurl }}/files/quagga-tutorial/r2.conf), and [R3]({{ site.baseurl }}/files/quagga-tutorial/r3.conf))       
 
 Within GNS3, I set things up so that Ethernet1 on the Quagga device connects to R1, Ethernet2 to R2 and Ethernet3 to R3.   Note
 though that as Ubuntu 16 uses systemd, the interfaces aren't eth1, eth2 and eth3.
@@ -320,5 +320,5 @@ hear from you.
 
 ## Useful Resources
 
-* [GNS File](/files/quagga-tutorial/quagga-lab.gns3)
+* [GNS File]({{ site.baseurl }}/files/quagga-tutorial/quagga-lab.gns3)
 

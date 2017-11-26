@@ -20,4 +20,4 @@ And... that's it.
 The photo below is a test of placing images into a Markdown Document.   It's a screen shot taken by Stephen Shirley of an IRC chat 
 in 2003 when I was logged on to the [ILUG's](http://www.linux.ie) IRC server from a cybercafe in Krakow, Poland.
 
-![Holiday Photo from 2003](/img/tb-holliers.png "Holiday Photo from 2003")
+![Holiday Photo from 2003]({{ site.baseurl }}/img/tb-holliers.png "Holiday Photo from 2003")
